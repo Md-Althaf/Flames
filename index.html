@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Flames</title>
+    <title>Flames</title>   
 </head>
 <body>
     <div class="box">
@@ -12,7 +12,10 @@
         <p>Enter Two Names</p>
         <input type="text" id="name1" placeholder="Your Name .........">
         <input type="text" id="name2" placeholder="Your Crush Name ...">
-        <button onclick="calculateFlames()">Calculate</button>
+        
+        <button id="CalculateButton" onclick="calculateFlames()">Calculate</button>
+        
+        
         <button  onclick="resetGame()">Reset</button>
         <div id="resultBox">
             <p>Result:</p>
@@ -21,6 +24,29 @@
             </div>
         </div>
     </div>
+
+
+    <div class="wall">
+        <h2>Flames Wall</h2>
+        <p> Names that already seen their Flames </p>
+
+        <div class="wall-names">
+            yet to write it 
+            <div class="name-card">
+                Arjun loves  Priya
+            </div>
+            <div class="name-card">
+                arjun loves payal
+            </div>
+            <div class="name-card">
+                ajay loves kareena
+            </div>
+            <div class="name-card"> 
+                ritesh loves geneliya
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
     
 </body>

@@ -1,0 +1,95 @@
+body {
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 60px 20px;
+    margin: 0;
+    text-align: center;
+}
+
+
+.box {
+    background-color:rgb(240, 241, 237);
+    margin: auto;
+    border-radius: 25%;
+    max-width: 60%;
+    padding: 100px;
+
+}
+h1 {
+    color: rgb(209, 8, 41);
+    margin-bottom: 5px;
+}
+
+p {
+    color: aliceblue;
+}
+
+
+input {
+    width: 90%;
+    padding: 12px;
+    border-radius: 8px;
+    padding: 12px;
+
+}
+input:focus {
+    outline: none;
+    border-color: rgb(228, 13, 13);
+}
+
+button {
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 11px 20px;
+}
+
+
+#CalculateButton {
+    background-color: rgb(230, 195, 143);
+    color: white;
+}
+#resultBox {
+    margin-top: 20px;
+    background-color: rgb(136, 100, 56);
+    padding: 15px;
+    border-radius: 18px;
+}
+
+#result {
+    font-size: 28px;
+    font-weight: bold;
+    color: blue;
+}
+
+
+.wall {
+
+    width: 800px;
+    max-width: 80%;
+
+}
+
+.wall h2 {
+    color: blueviolet;
+    margin-bottom: 5px;
+}
+
+.wall-names {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+
+
+}
+
+.name-card {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px;
+    font-size: 25px;
+}
