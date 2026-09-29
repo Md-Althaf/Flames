@@ -141,27 +141,27 @@ function showWall(data) {
         let message = "";
 
         if (data[i].result == "Love") {
-            message = data[i].name1 + "Laves" + data[i].name2;
+            message = data[i].name1  + data[i].name2 + ": Mutual Interest";
         }
 
         else if (data[i].result == "Enemy") {
-            message = data[i].name1 +"&"+ data[i].name2 + "are Enemees";
+            message = data[i].name1 +" & "+ data[i].name2 + " are Tom & Jerry ";
         }
 
         else if (data[i].result == "Marriage") {
-            message =  data[i].name1 + " and " + data[i].name2 + "May get Maried "
+            message =  data[i].name1 + " and " + data[i].name2 + " Rab Ne Bana Di! : Long Term  "
         }
 
 
         else if (data[i].result == "Affection") {
-            message = data[i].name1 + "has affection for" + data[i].name2 ;
+            message = data[i].name1 + " are " + data[i].name2 + ": Eye Contact ";
         }
 
         else if (data[i].result == "Siblings") {
-            message = data.name1 + "and" + data.name2 +"are Siblings"
+            message = data.name1 + "and" + data.name2 +" Family Vibe "
         }
         else if (data[i].result == "Friends") {
-            message = data.name1 + "are" + data.name2 +"are Freinds"
+            message = data.name1 + "are" + data.name2 +" Friends"
         }
 
 

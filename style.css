@@ -1,102 +1,113 @@
 body {
-    background-color: whitesmoke;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 60px 20px;
-    margin: 0;
-    text-align: center;
+     background-color: pink;
+     font-family: Arial, Helvetica, sans-serif;
+     padding: 60px 20px;
+     margin: 0;
+     text-align: center;
 }
 
 
 .box {
-    width: 330px;
-    background: white;
-    padding: 30px;
-    border: 2px solid #222;
-    border-radius: 10px;
-    text-align: center;
+     width: 330px;
+     background: white;
+     padding: 30px;
+     border: 2px solid red;
+     border-radius: 10px;
+     text-align: center;
 
-    position: absolute;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+
+     z-index: 10;
 
 }
 
 
 h1 {
-    color: rgb(209, 8, 41);
-    margin-bottom: 5px;
+     color: red;
+     margin-bottom: 5px;
 }
 
 p {
-    color: aliceblue;
+     color: gray;
 }
 
 
 input {
-    width: 90%;
-    padding: 12px;
-    border-radius: 8px;
+     width: 90%;
+     padding: 12px;
+     border-radius: 8px;
+
+     
 
 }
 input:focus {
-    outline: none;
-    border-color: rgb(228, 13, 13);
+     outline: none;
+     border-color: red;
 }
 
 button {
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
-    padding: 11px 20px;
+     font-size: 16px;
+     border: none;
+     cursor: pointer;
+     border: none;
+     border-radius: 8px;
+     padding: 11px 20px;
 }
 
 
 #CalculateButton {
-    background-color: rgb(230, 195, 143);
-    color: white;
+     background-color: orange;
+     color: white;
 }
 #resultBox {
-    margin-top: 20px;
-    background-color: rgb(136, 100, 56);
-    padding: 15px;
-    border-radius: 18px;
+     margin-top: 20px;
+     background-color: lightcoral;
+     padding: 15px;
+     border-radius: 18px;
 }
 
 #result {
-    font-size: 28px;
-    font-weight: bold;
-    color: blue;
+     font-size: 28px;
+     font-weight: bold;
+     color: darkred;
 }
 
 
 .wall {
-    position: relative;
+     position: absolute;
 
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+     top: 0;
+     left: 0;
+     width: 100vw;
+     height: 100vh;
+     overflow: hidden;
 
-    max-width: 80%;
+     z-index: 1;
+
+     pointer-events: none;
 
 }
 
 .wall h2 {
 
-    text-align: center;
-    padding-top: 20px;
-    color: blueviolet;
-    margin-bottom: 5px;
+     text-align: center;
+     padding-top: 20px;
+     color: purple;
+     margin-bottom: 5px;
 }
 
 .wall-names {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    
-    justify-content: center;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     
+     justify-content: center;
 
 
 
@@ -104,113 +115,114 @@ button {
 
 .name-card {
 
-    position: absolute;
+     position: absolute;
 
-    width: 190px;
+     width: 190px;
 
-    display: flex;
+     display: flex;
 
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    padding: 15px 20px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    font-size: 25px;
-    text-align: center;
-
+     align-items: center;
+     justify-content: center;
+     background-color: white;
+     padding: 15px 20px;
+     border-radius: 10px;
+     border: 2px solid hotpink;
+     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+     font-size: 25px;
+     text-align: center;
+     font-size: 16px;
+     color: black;
 }
 
 
 .pair {
-    font-weight: bold;
-    line-height: 1.4;
+     font-weight: bold;
+     line-height: 1.4;
 }
 
 .name-card:nth-child(1) {
-    top: 100px;
-    left: 5%;
-    transform: rotate(-5deg);
+     top: 100px;
+     left: 5%;
+     transform: rotate(-5deg);
 }
 
 
 .name-card:nth-child(2) {
-    top:90px;
-    left:25%;
+     top:90px;
+     left:25%;
 
-    transform: rotate(4deg);
+     transform: rotate(4deg);
 }
 
 .name-card:nth-child(3) {
-    top:105px;
-    right:25%;
+     top:105px;
+     right:25%;
 
-    transform: rotate(-3deg);
+     transform: rotate(-3deg);
 }
 
 
 .name-card:nth-child(4){
-    top:110px;
-    right:5%;
-    transform: rotate(5deg);
+     top:110px;
+     right:5%;
+     transform: rotate(5deg);
 }
 
 
 .name-card:nth-child(5) {
-    top: 280px;
-    left: 3%;
+     top: 280px;
+     left: 3%;
 
-    transform: rotate(4deg);
+     transform: rotate(4deg);
 }
 
 .name-card:nth-child(6){
-    top:300px;
-    right: 3%;
+     top:300px;
+     right: 3%;
 
-    transform: rotate(-5deg);
+     transform: rotate(-5deg);
 }
 
 .name-card:nth-child(7) {
-    top: 180px;
-    left: 8%;
+     top: 180px;
+     left: 8%;
 
-    transform: rotate(-4deg);
+     transform: rotate(-4deg);
 }
 
 .name-card:nth-child(8){
-    top: 150px;
-    right: 30%;
+     top: 150px;
+     right: 30%;
 
-    transform: rotate(3deg);
+     transform: rotate(3deg);
 }
 
 .name-card:nth-child(9) {
 
-    bottom: 170px;
-    right: 28%;
+     bottom: 170px;
+     right: 28%;
 
-    transform: rotate(-4deg);
+     transform: rotate(-4deg);
 }
 
 .name-card:nth-child(10) {
-    bottom:150px ;
-    right: 26% ;
+     bottom:150px ;
+     right: 26% ;
 
-    transform: rotate(-3deg);
+     transform: rotate(-3deg);
 }
 
 .name-card:nth-child(11) {
-    bottom: 130px;
+     bottom: 130px;
 
-    right: 28%;
+     right: 28%;
 
-    transform: rotate(-3deg);
+     transform: rotate(-3deg);
 }
 
 .name-card:nth-child(12) {
-    bottom: 110px;
-    right: 20%;
+     bottom: 110px;
+     right: 20%;
 
-    transform: rotate(-2deg);
+     transform: rotate(-2deg);
 }
-
