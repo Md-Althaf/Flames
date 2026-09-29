@@ -8,15 +8,11 @@ whether u wnat to check ur flames outcome .post your mathc on the public though 
 
 
 
-## How to Set Up Your Own Database (Google Sheets + Apps Script)
+## How to use 
 
-if u wnat to make thsi yourself then go to spreadsheet and create a new one and make headers name1 and name2 and result and date in row 1 okay .
+1. Open the link (https://md-althaf.github.io/Flames/).
+2. Enter Both Names.
+3. Click Calculate
+4. It Will calculate your flames result in database and u get ur result on Flames Wall.
 
-1. inside ur spreadsheet look at the link in ur browser URL . grab the long string of text right after `/d/` like this :
-   `httsp://docs.gogle.com/spredsheets/d/YOUR_SPREDSHET_ID_HERE/edt`
-
-2. copy that code after `/d/` that is ur spreadsheet file name / ID .
-
-3. go to Extensions -> Apps Script and paste ur code and add ur ID like this :
-   ```javascript
-   const sheet = SpreadsheetApp.openById("YOUR_SPREDSHET_ID_HERE").getActiveSheet();
+# Made BY Md-Althaf Alias Bose-Nova
